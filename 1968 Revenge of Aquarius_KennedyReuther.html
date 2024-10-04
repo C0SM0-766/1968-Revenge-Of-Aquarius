@@ -391,6 +391,14 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
+        "pk": 1166633,
+        "fields": {
+            "question": 25444444,
+            "description": "Like me, Senator McCarthy has fought hard this year against a Democratic establishment that’s lost its way. We may have started on different paths, but now we’re united, ready to take on the status quo."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
         "pk": 1665,
         "fields": {
             "question": 255,
@@ -947,6 +955,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 338,
             "description": "You know, Wayne Morse has been there from the very beginning, speaking out against LBJ and the war in Vietnam. I know he’d be more than willing to serve with me. Let’s give him a call."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 322949,
+        "fields": {
+            "question": 338,
+            "description": "Gene’s been fighting for the same things we have. It’s time to combine our efforts and take on the Democratic establishment. Teddy, let’s get him on the phone."
         }
     },
     {
@@ -6370,6 +6386,36 @@ campaignTrail_temp.answer_score_global_json = [
     },
     {
         "model": "campaign_trail.answer_score_global",
+        "pk": 711,
+        "fields": {
+            "answer": 1166633,
+            "candidate": 24,
+            "affected_candidate": 24,
+            "global_multiplier": 0.0017
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 711,
+        "fields": {
+            "answer": 1166633,
+            "candidate": 24,
+            "affected_candidate": 23,
+            "global_multiplier": 0.00783
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 711,
+        "fields": {
+            "answer": 1166633,
+            "candidate": 24,
+            "affected_candidate": 25,
+            "global_multiplier": 0.0015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
         "pk": 717,
         "fields": {
             "answer": 1665,
@@ -7266,6 +7312,26 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 24,
             "affected_candidate": 24,
             "global_multiplier": -0.1786
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 968,
+        "fields": {
+            "answer": 322949,
+            "candidate": 24,
+            "affected_candidate": 25,
+            "global_multiplier": 0.0066
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 968,
+        "fields": {
+            "answer": 322949,
+            "candidate": 24,
+            "affected_candidate": 24,
+            "global_multiplier": -0.0075
         }
     },
     {
@@ -8846,9 +8912,29 @@ campaignTrail_temp.answer_score_issue_json = [
         "model": "campaign_trail.answer_score_issue",
         "pk": 706,
         "fields": {
+            "answer": 322949,
+            "issue": 11,
+            "issue_score": 0.5,
+            "issue_importance": 13
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 706,
+        "fields": {
             "answer": 166633,
             "issue": 11,
             "issue_score": 0.5,
+            "issue_importance": 13
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 706,
+        "fields": {
+            "answer": 1166633,
+            "issue": 11,
+            "issue_score": 0.75,
             "issue_importance": 13
         }
     },
@@ -12664,11 +12750,33 @@ campaignTrail_temp.answer_score_state_json = [
         "model": "campaign_trail.answer_score_state",
         "pk": 8929,
         "fields": {
+            "answer": 322949,
+            "state": 119,
+            "candidate": 24,
+            "affected_candidate": 24,
+            "state_multiplier": 0.0105
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 8929,
+        "fields": {
             "answer": 166633,
             "state": 131,
             "candidate": 24,
             "affected_candidate": 25,
             "state_multiplier": 0.00469
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 8929,
+        "fields": {
+            "answer": 1166633,
+            "state": 119,
+            "candidate": 24,
+            "affected_candidate": 24,
+            "state_multiplier": 0.0285469
         }
     },
     {
@@ -13478,6 +13586,15 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 166633,
             "candidate": 24,
             "answer_feedback": "Senator Morse is connecting well and has even encouraged some mayors and congressmen from Oregon and Washington to endorse you. However, he seems reluctant to push hard for the campaign, preferring to stay in Washington and give press interviews. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2009,
+        "fields": {
+            "answer": 1166633,
+            "candidate": 24,
+            "answer_feedback": "Senator McCarthy had a stronger connection with students during your primary battle, and selecting him has pleased your base. However, while he strengthens your campaign in the Midwest, he might hurt it with moderate minded voters."
         }
     },
     {
@@ -14438,6 +14555,15 @@ campaignTrail_temp.answer_feedback_json = [
         "model": "campaign_trail.answer_feedback",
         "pk": 2134,
         "fields": {
+            "answer": 322949,
+            "candidate": 24,
+            "answer_feedback": "There’s obvious tension between you and Gene, especially between your two camps. But the cause is bigger than both of you, and better instincts prevailed. After a long phone call, Gene agreed from his home in Minneapolis, Minnesota."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2134,
+        "fields": {
             "answer": 32294,
             "candidate": 24,
             "answer_feedback": "The Republican-turned-Independent-turned-Democrat, now Independent again, Senator from Oregon, takes your call. With your established relationship and his clear dislike of LBJ, he accepts your offer. It’s clear his name will, at the very least, help you in the West."
@@ -15164,6 +15290,18 @@ campaignTrail_temp.running_mate_last_name= 'Powell';
         "fields": {
           "priority": 1,
           "description": "You've chosen Wayne Morse as your running mate, a fellow Senator who stood by your side at the Peace and Freedom Convention. Known for his somewhat quixotic nature, Morse is nearing retirement, and it seems this run with you will be the final chapter of his career. ",
+          "likelihood": 1
+        }
+      }
+    }
+    if(ans == 32294){
+      // HEAL HAPPENS
+      campaignTrail_temp.questions_json[9] = {
+        "model": "campaign_trail.question",
+        "pk": 25444444,
+        "fields": {
+          "priority": 1,
+          "description": "You've selected Eugene McCarthy as your running mate, a fellow senator who opposed the Vietnam War and challenged LBJ for the Democratic nomination. While your relationship has been rocky, this shared cause has brought you together to fight the establishment. ",
           "likelihood": 1
         }
       }
