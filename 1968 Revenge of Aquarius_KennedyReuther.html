@@ -383,6 +383,14 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
+        "pk": 166633,
+        "fields": {
+            "question": 2544444,
+            "description": "Like me, Senator Morse stands against our nation’s policy in Vietnam. It’s time we challenge the military-industrial complex and do what’s right, not just for our country, but for the world. Join us in this fight."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
         "pk": 1665,
         "fields": {
             "question": 255,
@@ -6296,7 +6304,7 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 16663,
             "candidate": 24,
-            "affected_candidate": 23,
+            "affected_candidate": 24,
             "global_multiplier": -0.0033
         }
     },
@@ -6328,6 +6336,36 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 24,
             "affected_candidate": 23,
             "global_multiplier": -0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 711,
+        "fields": {
+            "answer": 166633,
+            "candidate": 24,
+            "affected_candidate": 24,
+            "global_multiplier": 0.0017
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 711,
+        "fields": {
+            "answer": 166633,
+            "candidate": 24,
+            "affected_candidate": 23,
+            "global_multiplier": 0.00783
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 711,
+        "fields": {
+            "answer": 166633,
+            "candidate": 24,
+            "affected_candidate": 25,
+            "global_multiplier": 0.0015
         }
     },
     {
@@ -8779,6 +8817,16 @@ campaignTrail_temp.answer_score_issue_json = [
         "pk": 706,
         "fields": {
             "answer": 32294,
+            "issue": 13,
+            "issue_score": 0.5,
+            "issue_importance": 13
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 706,
+        "fields": {
+            "answer": 166633,
             "issue": 13,
             "issue_score": 0.5,
             "issue_importance": 13
@@ -12860,6 +12908,17 @@ campaignTrail_temp.answer_score_state_json = [
         "model": "campaign_trail.answer_score_state",
         "pk": 8929,
         "fields": {
+            "answer": 16663,
+            "state": 133,
+            "candidate": 24,
+            "affected_candidate": 24,
+            "state_multiplier": 0.0153299
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 8929,
+        "fields": {
             "answer": 3315,
             "state": 101,
             "candidate": 24,
@@ -13314,7 +13373,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 1663,
             "candidate": 24,
-            "answer_feedback": "The two of you make a formidable team, combining youthful progressivism and labor politics into a campaign that excites many—even the press is impressed! "
+            "answer_feedback": "You and Walter make a strong team, blending youthful progressivism with labor politics, and even the press is taking notice. However, some of your student supporters seem a bit disappointed with the campaign’s direction  "
         }
     },
     {
@@ -13324,6 +13383,15 @@ campaignTrail_temp.answer_feedback_json = [
             "answer": 16663,
             "candidate": 24,
             "answer_feedback": "Mayor Stokes is connecting well with middle-class White voters and, of course, Black voters, but there’s concern about his ability to engage with working-class Whites, the same voters who hear all of Reagan’s dog whistles. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2009,
+        "fields": {
+            "answer": 166633,
+            "candidate": 24,
+            "answer_feedback": "Senator Morse is connecting well and has even encouraged some mayors and congressmen from Oregon and Washington to endorse you. However, he seems reluctant to push hard for the campaign, preferring to stay in Washington and give press interviews. "
         }
     },
     {
@@ -14920,7 +14988,7 @@ document.head.appendChild(style);
     campaignTrail_temp.running_mate_last_name= 'Stokes';
   }
   if (ans == 32294) {
-   campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/h4dvhgnH/Screenshot-2024-09-30-113050-2-3.png';
+   campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/0J6RS0L.jpeg';
     campaignTrail_temp.running_mate_last_name= 'Morse';
   }
   if (ans == 3251) {
@@ -14998,6 +15066,18 @@ campaignTrail_temp.running_mate_last_name= 'Powell';
         "fields": {
           "priority": 1,
           "description": "You've chosen Carl Stokes as your running mate, a man who, like you, is now a former Democrat. By accepting your offer, he has arguably sacrificed a future in mainstream Democratic politics. As the first Black man on a major national ticket, he’s also a historic choice. ",
+          "likelihood": 1
+        }
+      }
+    }
+    if(ans == 32294){
+      // HEAL HAPPENS
+      campaignTrail_temp.questions_json[9] = {
+        "model": "campaign_trail.question",
+        "pk": 2544444,
+        "fields": {
+          "priority": 1,
+          "description": "You've chosen Wayne Morse as your running mate, a fellow Senator who stood by your side at the Peace and Freedom Convention. Known for his somewhat quixotic nature, Morse is nearing retirement, and it seems this run with you will be the final chapter of his career. ",
           "likelihood": 1
         }
       }
