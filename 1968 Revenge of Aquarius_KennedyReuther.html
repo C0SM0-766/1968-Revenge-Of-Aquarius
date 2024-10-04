@@ -927,6 +927,14 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
+        "pk": 33294,
+        "fields": {
+            "question": 338,
+            "description": "It's not a secret we are going for the black, and minority voter this time around. I want to give Carl Stokes a call, the guy is pretty moderate, affable, and capable. I couldn't think of a more fiting partner. ."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
         "pk": 3295,
         "fields": {
             "question": 286,
@@ -7174,6 +7182,36 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 24,
             "affected_candidate": 24,
             "global_multiplier": -0.1786
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 968,
+        "fields": {
+            "answer": 33294,
+            "candidate": 24,
+            "affected_candidate": 25,
+            "global_multiplier": -0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 968,
+        "fields": {
+            "answer": 33294,
+            "candidate": 24,
+            "affected_candidate": 23,
+            "global_multiplier": 0.0125
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 968,
+        "fields": {
+            "answer": 33294,
+            "candidate": 24,
+            "affected_candidate": 24,
+            "global_multiplier": -0.023
         }
     },
     {
@@ -13884,7 +13922,16 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 3294,
             "candidate": 24,
-            "answer_feedback": "You invite the Mayor to your suite and lay the offer down, which he immediately accepts. With your youth and charisma, this could turn out well."
+            "answer_feedback": "You invite the Union man to your suite and lay the offer down, which he immediately accepts. With your youth and charisma, this could turn out well."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 2134,
+        "fields": {
+            "answer": 33294,
+            "candidate": 24,
+            "answer_feedback": "The Mayor accepts your eventual invite to your private suite. Despite taking power in just November of 1967, Stokes is still a powerful figure amongst black folks, and could bolster your campaign with them."
         }
     },
     {
@@ -14512,6 +14559,10 @@ document.head.appendChild(style);
   if (ans == 3294) {
    campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/qKxiNLo.jpeg';
     campaignTrail_temp.running_mate_last_name= 'Reuther';
+  }
+  if (ans == 33294) {
+   campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/ZKqwSfps/Screenshot-2024-09-30-hhg113050.png';
+    campaignTrail_temp.running_mate_last_name= 'Stokes';
   }
   if (ans == 3251) {
    campaignTrail_temp.running_mate_image_url = 'https://i.imgur.com/iKIUEcH.jpeg';
