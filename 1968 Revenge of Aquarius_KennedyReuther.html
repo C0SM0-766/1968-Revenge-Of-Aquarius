@@ -14651,6 +14651,18 @@ campaignTrail_temp.running_mate_last_name= 'Powell';
        campaignTrail_temp.candidate_json[2]["fields"].first_name = "Democrat";
        campaignTrail_temp.candidate_json[2]["fields"].last_name = "Democrat";
   }
+    if(ans == 33294){
+      // HEAL HAPPENS
+      campaignTrail_temp.questions_json[7] = {
+        "model": "campaign_trail.question",
+        "pk": 254444,
+        "fields": {
+          "priority": 1,
+          "description": "You've chosen Carl Stokes as your running mate, a man who, like you, is now a former Democrat. By accepting your offer, he has arguably sacrificed a future in mainstream Democratic politics. As the first Black man on a major national ticket, he’s also a historic choice. ",
+          "likelihood": 1
+        }
+      }
+    }
   if (ans == 3257) {
        campaignTrail_temp.candidate_json[1]["fields"].first_name = "Undecided";
        campaignTrail_temp.candidate_json[1]["fields"].last_name = "Undecided";
